@@ -162,7 +162,7 @@ function App() {
               </div>
             </div>
             <div class="card mb-0">
-              <img src={logo2} class="card-img-top" alt="..." />
+              <img src={logo2} class="card-img-top" alt="Rasm" />
               <div class="card-body">
                 <span className="span">January 1, 2022</span>
                 <h3 class="card-title">Post Title</h3>
