@@ -1,343 +1,210 @@
 import "./App.css";
 import logo from "./img.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import logo2 from "./img2.jpg";
 
 function App() {
   return (
     <>
-      <div className="conytainer-fluid">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid px-5">
-            <h3 class="navbar-brand px-5" href="#">
-              Start Bootstrap
-            </h3>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    About
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Shop
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        All Product
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Popular Items
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        New Arrivals
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <button className="btn btn-outline-dark me-5">
-              <FontAwesomeIcon
-                className="me-2"
-                icon={faCartShopping}
-              ></FontAwesomeIcon>
-              Cart
-              <span id="num" className="bg-dark text-white ms-2">
-                0
-              </span>
-            </button>
-          </div>
+      <div className="container-fluid p-0">
+        <nav className="d-flex justify-content-between align-items-center px-5 py-3">
+          <h5 className="text-white fw-400 px-5">Start Bootstarp</h5>
+          <ul className="d-flex align-items-center p-0 px-5 m-0">
+            <li className="me-3">
+              <a className="opacity-75 text-white" href="#">
+                Home
+              </a>
+            </li>
+            <li className="me-3">
+              <a className="opacity-75 text-white" href="#">
+                About
+              </a>
+            </li>
+            <li className="me-3">
+              <a className="opacity-75 text-white" href="#">
+                Contact
+              </a>
+            </li>
+            <li className="me-3">
+              <a className="opacity-100 text-white" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
         </nav>
         <section
           id="home"
           className="d-flex align-items-center justify-content-center flex-column"
         >
-          <h1 className="text-white fw-bold display-4">Shop in style</h1>
-          <p className="description fw-bold">
-            With this shop hompeage template
-          </p>
+          <h1 className="fw-bold">Welcome to Blog Home!</h1>
+          <span className="fw-400">
+            A Bootstrap 5 starter layout for your next blog homepage
+          </span>
         </section>
-        <div className="container p-5">
-          <div className="row py-5">
-            <div id="card" className="col mb-3">
+        <div className="container my-4">
+          <div className="row">
+            <div className="col-lg-8">
               <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span></span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 noicon">
-                    <h5 className="fw-bold">Fancy Product</h5>
-                    <span className="icons d-block"></span>
-                    <span>$40.00 - $80.00</span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">View options</a>
+                <img src={logo} alt="" />
+                <div class="card-body">
+                  <span className="fw-200">January 1, 2022</span>
+                  <h2 class="card-title">Featured Post Title</h2>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                    laboriosam. Dicta expedita corporis animi vero voluptate
+                    voluptatibus possimus, veniam magni quis!
+                  </p>
+                  <a href="#" class="btn btn-primary">
+                    Read more →
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="card">
+                <div className="card-header mb-0">Search</div>
+                <div className="card-body">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter search term..."
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-primary boder-radius-0"
+                        type="button"
+                      >
+                        Go
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span id="imgTitle">Sale</span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 py-3">
-                    <h5 className="fw-bold">Special Item</h5>
-                    <span className="icons d-block">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                    </span>
-                    <span>
-                      <del>$20.00</del> $18.00
-                    </span>
+              <div className="card my-3">
+                <div className="card-header">
+                  <span>Categories</span>
+                </div>
+                <div className="card-body d-flex">
+                  <div className="col1 d-flex flex-column">
+                    <a href="#">Wen Design</a>
+                    <a href="#">HTML</a>
+                    <a href="#">Freebiens</a>
                   </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
+                  <div className="col2 d-flex flex-column ms-5">
+                    <a href="#">JavaScript</a>
+                    <a href="#">CSS</a>
+                    <a href="#">Tutorial</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="card" className="col mb-3">
               <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span id="imgTitle">Sale</span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 noicon">
-                    <h5 className="fw-bold">Special Item</h5>
-                    <span className="icons d-block"></span>
-                    <span>
-                      <del>$50.00</del> $25.00
-                    </span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
-                  </div>
+                <div className="card-header">
+                  <span>Side Widget</span>
                 </div>
-              </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span></span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 py-3">
-                    <h5 className="fw-bold">Popular Item</h5>
-                    <span className="icons d-block">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                    </span>
-                    <span>
-                      $40.00
-                    </span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span id="imgTitle">Sale</span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 noicon">
-                    <h5 className="fw-bold">Sale Item</h5>
-                    <span className="icons d-block"></span>
-                    <span>
-                      <del>$50.00</del> $25.00
-                    </span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span></span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 noicon">
-                    <h5 className="fw-bold">Fancy Product</h5>
-                    <span className="icons d-block"></span>
-                    <span>$120.00 - $280.00</span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">View options</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span id="imgTitle">Sale</span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 py-3">
-                    <h5 className="fw-bold">Special Item</h5>
-                    <span className="icons d-block">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                    </span>
-                    <span>
-                      <del>$20.00</del> $18.00
-                    </span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="card" className="col mb-3">
-              <div className="card">
-                <img src={logo} alt="Rasm" />
-                <span></span>
-                <div className="card-body py-4">
-                  <div className="text-center px-4 py-3">
-                    <h5 className="fw-bold">Popular Item</h5>
-                    <span className="icons d-block">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faStar}
-                      ></FontAwesomeIcon>
-                    </span>
-                    <span>
-                      $40.00
-                    </span>
-                  </div>
-                  <div className="card-footer bg-transparent">
-                    <div className="text-center px-4 pt-0">
-                      <a className="btn btn-outline-dark">Add to card</a>
-                    </div>
-                  </div>
+                <div className="card-body mb-0">
+                  <p>
+                    You can put anything you want inside of these side widgets.
+                    They are easy to use, and feature the Bootstrap 5 card
+                    component!
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <footer className="d-flex align-items-center justify-content-center">
-          <div className="text-center">
-            <p className="text-white">Copyright © Your Website 2022</p>
+        <div className="container">
+          <div className="col-lg-8 d-flex box">
+            <div class="card">
+              <img src={logo2} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span className="span">January 1, 2022</span>
+                <h3 class="card-title">Post Title</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis aliquid atque, nulla.
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Read more →
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img src={logo2} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span className="span">January 1, 2022</span>
+                <h3 class="card-title">Post Title</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis aliquid atque, nulla.
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Read more →
+                </a>
+              </div>
+            </div>
           </div>
+          <div className="col-lg-8 d-flex justify-content-center box2 my-4">
+            <div class="card mb-4">
+              <img src={logo2} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span className="span">January 1, 2022</span>
+                <h3 class="card-title">Post Title</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis aliquid atque, nulla
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Read more →
+                </a>
+              </div>
+            </div>
+            <div class="card mb-0">
+              <img src={logo2} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span className="span">January 1, 2022</span>
+                <h3 class="card-title">Post Title</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                  laboriosam.
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Read more →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="conatiner">
+          <div className="col-lg-8">
+            <ul className="d-flex justify-content-center align-items-center py-4">
+              <li className="page-item disabled">Newer</li>
+              <li className="page-item disabled active">
+                <a href="#">1</a>
+              </li>
+              <li className="page-item">
+                <a href="#">2</a>
+              </li>
+              <li className="page-item">
+                <a href="#">3</a>
+              </li>
+              <li className="page-item disabled">
+                <a href="#!">...</a>
+              </li>
+              <li className="page-item">
+                <a href="#">15</a>
+              </li>
+              <li className="page-item">
+                <a href="#">Order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer className="d-flex align-items-center justify-content-center">
+          <p>Copyright © Your Website 2022</p>
         </footer>
       </div>
     </>

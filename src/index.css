@@ -1,10 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0; padding: 0;
-}
-.noicon {
-  padding: 1.7rem 0 !important;
-}
-del {
-  color: #9e9d9d;
+  text-decoration: none !important;
+  outline: none !important;
+  list-style: none !important;
 }
