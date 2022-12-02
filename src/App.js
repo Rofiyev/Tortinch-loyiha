@@ -52,7 +52,7 @@ function App() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
                     laboriosam. Dicta expedita corporis animi vero voluptate
-                    voluptatibus possimus, veniam magni quis!
+                    voluptatibus possimus, veniam magni quis.
                   </p>
                   <a href="#" class="btn btn-primary">
                     Read more →
