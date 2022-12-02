@@ -44,7 +44,7 @@ function App() {
           <div className="row">
             <div className="col-lg-8">
               <div className="card">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Rasm" />
                 <div class="card-body">
                   <span className="fw-200">January 1, 2022</span>
                   <h2 class="card-title">Featured Post Title</h2>
